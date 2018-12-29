@@ -1,4 +1,4 @@
-Microservice Kafka Sample 123
+Microservice Kafka Sample 
 ==================
 
 [Deutsche Anleitung zum Starten des Beispiels](WIE-LAUFEN.md)

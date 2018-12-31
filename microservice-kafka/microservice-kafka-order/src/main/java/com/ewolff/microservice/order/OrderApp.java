@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class OrderApp {
 
 	public static void main(String[] args) {
+		System.out.println("ZBLI: enter OrderApp::main()");	
 		SpringApplication.run(OrderApp.class, args);
+		System.out.println("ZBLI: exit OrderApp::main()");	
 	}
 
 }

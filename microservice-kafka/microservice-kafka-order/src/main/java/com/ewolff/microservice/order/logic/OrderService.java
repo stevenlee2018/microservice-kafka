@@ -31,7 +31,9 @@ public class OrderService {
 	}
 
 	private void fireOrderCreatedEvent(Order order) {
+		System.out.println("ZBLI enter OrderService::fireOrderCreatedEvent with order: " + order);
 		kafkaTemplate.send("order", order.getId() + "created", order);
+		System.out.println("ZBLI exit OrderService::fireOrderCreatedEvent with order: " + order);
 	}
 
 	public double getPrice(long orderId) {

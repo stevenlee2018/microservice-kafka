@@ -44,6 +44,7 @@ class OrderController {
 
 	@RequestMapping("/")
 	public ModelAndView orderList() {
+		System.out.println("ZBLI: enter OrderController::orderList()");
 		return new ModelAndView("orderlist", "orders", orderRepository.findAll());
 	}
 

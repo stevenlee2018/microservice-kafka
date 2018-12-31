@@ -20,7 +20,7 @@ services:
      - shipping
      - invoicing
     ports:
-     - "8080:80"
+     - "8088:80"
   postgres:
     build: postgres
     environment:
